@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume,prenume,varsta,adresa,cv)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT cv (adresaEmail,numarTelefon,experienta)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT adresaEmail (#PCDATA)>
+<!ELEMENT numarTelefon (#PCDATA)>
+<!ELEMENT experienta (#PCDATA)>
+]>
+<persoane>
+    <persoana>
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Strada pacii</strada>
+            <numar>2</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <cv>
+            <adresaEmail>adresa1@gmail.com</adresaEmail>
+            <numarTelefon>0712345678</numarTelefon>
+            <experienta>Internship1</experienta>
+        </cv>
+    </persoana>
+    <persoana>
+        <nume>Ionescu</nume>
+        <prenume>Razvan</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Bulevardul Independentei</strada>
+            <numar>3</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <cv>
+            <adresaEmail>adresa2@gmail.com</adresaEmail>
+            <numarTelefon>0712345679</numarTelefon>
+            <experienta>Internship2</experienta>
+        </cv>
+    </persoana>
+    <persoana>
+        <nume>Sorcaru</nume>
+        <prenume>Alexandru</prenume>
+        <varsta>20</varsta>
+        <adresa>
+            <strada>Strada Cicoarei</strada>
+            <numar>1</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <cv>
+            <adresaEmail>adresa3@gmail.com</adresaEmail>
+            <numarTelefon>0712345671</numarTelefon>
+            <experienta>Dentist</experienta>
+        </cv>
+    </persoana>
+</persoane>

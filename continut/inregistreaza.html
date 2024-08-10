@@ -1,0 +1,66 @@
+   <p>Formular pentru a primi poze pe email cu pantere</p>
+    <form method="POST" action="/api/utilizatori">
+        <fieldset>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="Nume">Nume:</label>
+                <input type="text" id="Nume" name="Nume"><br>
+                <label for="Prenume">Prenume:</label>
+                <input type="text" id="Prenume" name="Prenume"><br>
+                <label for="parola">Parola:</label>
+                <input type="password" id="parola" name="parola"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+                <label for="tel">Numar Telefon:</label>
+                <input type="tel" id="tel" name="tel"><br>
+                <label type="sex" id="sex">Sex:</label>
+                <select name="sex" id="sex">
+                    <option value="M">Masculin</option>
+                    <option value="F">Feminin</option>
+                    <option value="Alt">Altele</option>
+                </select>
+                <br>
+                <label for="mancarea-preferata-alegere">Alegeti mancarea preferata:</label>
+                <input list="mancarea-preferata" id="mancarea-preferata-alegere" name="mancarea-preferata-alegere">
+                <datalist id="mancarea-preferata">
+                    <option value="Paste">
+                    <option value="Pizza">
+                    <option value="Burger">
+                </datalist>
+                <br>
+                <label for="culoare-choice">Culoarea preferata</label>
+                <input type="color">
+                <br>
+                <label for="data-choice">Data nasterii:</label>
+                <input type="date">
+                <br>
+                <label for="ora-choice">Ora nasterii</label>
+                <input type="time">
+                <br>
+                <label for="varsta-choice">Varsta</label>
+                <input type="range">
+                <br>
+                <label for="adresa-choice">Adresa personala: </label>
+                <input type="url">
+                <br>
+                <label for="descriere">Descriere</label>
+                <input type="textarea">
+                <p>Felina preferata: </p>
+                <select name="alegere" id="alegere">
+                    <option value="leu">leu</option>
+                    <option value="tigru">tigru</option>
+                    <option value="jaguar">jaguar</option>
+                    <option value="pantera neagra">pantera neagra</option>
+                </select>
+                <br>
+        </fieldset>
+        <br>
+        Sunt de acord cu conditiile 
+        <br>
+        <br>
+        <input type="checkbox"><br>
+                <button type="submit" >Inregistreaza</button>
+        </form>
